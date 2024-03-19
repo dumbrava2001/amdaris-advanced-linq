@@ -13,11 +13,14 @@ public class Actor
 
     public int NumberOfOscars { get; set; }
 
-    public Actor(string firstName, string lastName, int age, int numberOfOscars)
+    public Movie Movie { get; init; }
+
+    public Actor(string firstName, string lastName, int age, Movie movie, int numberOfOscars)
     {
         FirstName = firstName;
         LastName = lastName;
         Age = age;
+        Movie = movie;
         NumberOfOscars = numberOfOscars;
     }
 }
